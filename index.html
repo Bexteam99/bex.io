@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Business Excellence</title>
 
-    <title>Busniess Excellence</title>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-<!--
-    
-TemplateMo 562 Space Dynamic
+  <style>
+    /* Chatbot Container Styles */
+    #chatbot-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 200px;
+      height: 50px;
+      z-index: 1000;
+      background-color: #f9f9f9;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
+    }
 
-https://templatemo.com/tm-562-space-dynamic
+    #chatbot-container.expanded {
+      width: 400px;
+      height: 600px;
+    }
 
--->
-  </head>
+    #chatbot-header {
+      background-color: #B80000;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #chatbot-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: none;
+    }
+
+    #chatbot-container.expanded #chatbot-iframe {
+      display: block;
+    }
+  </style>
+</head>
 
 <body>
-
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
@@ -51,21 +84,21 @@ https://templatemo.com/tm-562-space-dynamic
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">  
-              <h4>Bussiness<span>Excellence</span></h4>
+            <a href="index.html" class="logo">
+              <h4>Business<span>Excellence</span></h4>
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-                <li><a href= https://sites.google.com/clarityrcm.com/eom-financials/eom-financials>EOM Financials</a></li>
-                <li><a href= https://sites.google.com/clarityrcm.com/app-sheet/app-sheet>App-sheet</a></li>
-                <li><a href=https://sites.google.com/clarityrcm.com/sops-be-reports/sops-be-reports>SOPs - BE Reports</a></li>
-                <li><a href=https://sites.google.com/clarityrcm.com/paymentprojection/payment-projection>Payment - Projection</a></li>
-                <li><a href=https://sites.google.com/clarityrcm.com/momarcomparison/mom-ar>MOM AR</a></li>
-                <li><a href="">#</a></li>
-            </ul>        
+              <li><a href="https://sites.google.com/clarityrcm.com/eom-financials/eom-financials">EOM Financials</a></li>
+              <li><a href="https://sites.google.com/clarityrcm.com/app-sheet/app-sheet">App-sheet</a></li>
+              <li><a href="https://sites.google.com/clarityrcm.com/sops-be-reports/sops-be-reports">SOPs - BE Reports</a></li>
+              <li><a href="https://sites.google.com/clarityrcm.com/paymentprojection/payment-projection">Payment - Projection</a></li>
+              <li><a href="https://sites.google.com/clarityrcm.com/momarcomparison/mom-ar">MOM AR</a></li>
+              <li><a href="#">#</a></li>
+            </ul>
             <a class='menu-trigger'>
-                <span>Menu</span>
+              <span>Menu</span>
             </a>
             <!-- ***** Menu End ***** -->
           </nav>
@@ -84,8 +117,7 @@ https://templatemo.com/tm-562-space-dynamic
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <h6>Success starts from business excellence</h6>
                 <h2>Ace Your <em>Analytics</em> &amp; <span>Automations</span> ...</h2>
-                <p>Business Excellence (BE) is the process of improving an organization's performance and adding value for its stakeholders by enhancing its management systems and procedures.<br>
-                  Data collection, analysis, visualization, and decision-making are our four main ideas. The process of collecting data include obtaining pertinent information from multiple sources.</p>
+                <p>Business Excellence (BE) is the process of improving an organization's performance and adding value for its stakeholders by enhancing its management systems and procedures.<br> Data collection, analysis, visualization, and decision-making are our four main ideas. The process of collecting data includes obtaining pertinent information from multiple sources.</p>
               </div>
             </div>
             <div class="col-lg-6">
@@ -98,26 +130,25 @@ https://templatemo.com/tm-562-space-dynamic
       </div>
     </div>
   </div>
-  <style>
-    /* Define a class for section margins */
-    .section {
-      margin-top: 350px; /* Adjust as needed */
-      margin-bottom: 350px; /* Adjust as needed */
-    }
-  </style>
 
-    
+  <!-- Chatbot -->
+  <div id="chatbot-container">
+    <div id="chatbot-header" onclick="toggleChatbot()">ClariAI</div>
+    <iframe id="chatbot-iframe" src="https://www.chatbase.co/chatbot-iframe/lmuVcxJMQC-vp6MDZDgLN"></iframe>
+  </div>
+
+  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-          <p>© Copyright 2021 Busniess Excellence (Clarity RCM). All Rights Reserved. 
-          
-          <br>Design: <a rel="nofollow" href="#">Business Excellence</a></p>
+          <p>© Copyright 2021 Business Excellence (Clarity RCM). All Rights Reserved.
+            <br>Design: <a rel="nofollow" href="#">Business Excellence</a></p>
         </div>
       </div>
     </div>
   </footer>
+
   <!-- Scripts -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -125,6 +156,12 @@ https://templatemo.com/tm-562-space-dynamic
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/templatemo-custom.js"></script>
-
+  <script>
+    function toggleChatbot() {
+      const chatbotContainer = document.getElementById('chatbot-container');
+      chatbotContainer.classList.toggle('expanded');
+    }
+  </script>
 </body>
+
 </html>
